@@ -14,7 +14,6 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
-
 const router = express.Router();
 
 router.post('/', upload.single('image'), (req, res) => {
@@ -25,6 +24,7 @@ aws.config.update({
   accessKeyId: config.accessKeyId,
   secretAccessKey: config.secretAccessKey,
 });
+
 const s3 = new aws.S3();
 const storageS3 = multerS3({
   s3,
@@ -35,6 +35,7 @@ const storageS3 = multerS3({
     cb(null, file.originalname);
   },
 });
+
 const uploadS3 = multer({ storage: storageS3 });
 router.post('/s3', uploadS3.single('image'), (req, res) => {
   res.send(req.file.location);

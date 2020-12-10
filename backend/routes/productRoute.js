@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   const category = req.query.category ? { category: req.query.category } : {};
+
   const searchKeyword = req.query.searchKeyword
     ? {
       name: {
@@ -14,11 +15,13 @@ router.get('/', async (req, res) => {
       },
     }
     : {};
+
   const sortOrder = req.query.sortOrder
     ? req.query.sortOrder === 'lowest'
       ? { price: 1 }
       : { price: -1 }
     : { _id: -1 };
+
   const products = await Product.find({ ...category, ...searchKeyword }).sort(
     sortOrder
   );
@@ -33,6 +36,7 @@ router.get('/:id', async (req, res) => {
     res.status(404).send({ message: 'Product Not Found.' });
   }
 });
+
 router.post('/:id/reviews', isAuth, async (req, res) => {
   const product = await Product.findById(req.params.id);
   if (product) {
@@ -55,6 +59,7 @@ router.post('/:id/reviews', isAuth, async (req, res) => {
     res.status(404).send({ message: 'Product Not Found' });
   }
 });
+
 router.put('/:id', isAuth, isAdmin, async (req, res) => {
   const productId = req.params.id;
   const product = await Product.findById(productId);
@@ -98,6 +103,7 @@ router.post('/', isAuth, isAdmin, async (req, res) => {
     rating: req.body.rating,
     numReviews: req.body.numReviews,
   });
+
   const newProduct = await product.save();
   if (newProduct) {
     return res
