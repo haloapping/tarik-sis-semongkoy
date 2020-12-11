@@ -186,6 +186,7 @@ a>.rating>span:last-child {
   width: 30rem;
   background-color: #f0f0f0;
   height: 100%;
+  font-size: 15px;
 }
 
 .sidebar.open {
