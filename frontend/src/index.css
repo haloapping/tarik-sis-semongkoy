@@ -107,25 +107,31 @@ a:hover {
 .product-name {
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .product-brand {
   font-size: 1.2rem;
   color: #808080;
+  text-align: center;
 }
 
 .product-price {
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .product-image {
   max-width: 34rem;
   max-height: 34rem;
+  display: block;
+  margin: auto;
 }
 
 .product-rating {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Reviews */
