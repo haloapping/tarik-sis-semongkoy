@@ -3,7 +3,6 @@ import { addToCart, removeFromCart } from '../actions/cartActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 function CartScreen(props) {
-
   const cart = useSelector(state => state.cart);
 
   const { cartItems } = cart;
@@ -39,7 +38,7 @@ function CartScreen(props) {
           cartItems.length === 0 ?
             <div>
               Cart is empty
-          </div>
+            </div>
             :
             cartItems.map(item =>
               <li>
