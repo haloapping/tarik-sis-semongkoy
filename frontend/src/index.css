@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font: 1.6rem Helvetica;
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
   margin: 0;
 }
