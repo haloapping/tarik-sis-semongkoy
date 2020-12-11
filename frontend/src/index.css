@@ -53,6 +53,7 @@ button {
   color: #ffffff;
   text-decoration: none;
   padding: 1rem;
+  font-size: 15px;
 }
 
 .header-links a:hover {
@@ -70,6 +71,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
 }
 
 a {
@@ -138,6 +140,7 @@ a:hover {
 ul.review {
   list-style-type: none;
   padding: 0;
+  font-size: 15px;
 }
 
 .review li {
@@ -223,10 +226,12 @@ a>.rating>span:last-child {
 
 .details-info {
   flex: 1 1 30rem;
+  font-size: 15px;
 }
 
 .details-action {
   flex: 1 1 30rem;
+  font-size: 15px;
 }
 
 .details-info ul,
@@ -308,7 +313,7 @@ a>.rating>span:last-child {
 .cart-list-container li {
   display: flex;
   justify-content: space-between;
-
+  font-size: 15px;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 0.1rem #c0c0c0 solid;
@@ -331,6 +336,7 @@ a>.rating>span:last-child {
 
 .cart-name {
   flex: 8 1;
+  font-size: 15px;
 }
 
 .cart-price {
@@ -356,6 +362,7 @@ a>.rating>span:last-child {
   border: 0.1rem #c0c0c0 solid;
   border-radius: 0.5rem;
   list-style-type: none;
+  font-size: 15px;
 }
 
 .form-container li {
@@ -402,6 +409,7 @@ tbody>tr:nth-child(odd) {
   justify-content: space-between;
   width: 40rem;
   margin: 1rem auto;
+  font-size: 15px;
 }
 
 .checkout-steps>div {
@@ -427,6 +435,7 @@ tbody>tr:nth-child(odd) {
 
 .placeorder-info {
   flex: 3 1 60rem;
+  font-size: 15px;
 }
 
 .placeorder-action {
@@ -435,6 +444,7 @@ tbody>tr:nth-child(odd) {
   border-radius: 0.5rem;
   background-color: #fcfcfc;
   padding: 1rem;
+  font-size: 15px;
 }
 
 .placeorder-info>div {
@@ -536,6 +546,7 @@ tbody>tr:nth-child(odd) {
 .categories a {
   display: flex;
   padding: 1rem;
+  font-size: 15px;
 }
 
 .categories a:hover {
