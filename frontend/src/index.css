@@ -385,6 +385,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  font-size: 15px;
 }
 
 .content-margined {
@@ -397,10 +398,16 @@ input {
 
 th {
   text-align: left;
+  font-size: 15px;
 }
 
 tbody>tr:nth-child(odd) {
   background-color: #f0f0f0;
+  font-size: 15px;
+}
+
+tbody>tr:nth-child(even) {
+  font-size: 15px;
 }
 
 /* Checkout Steps */
